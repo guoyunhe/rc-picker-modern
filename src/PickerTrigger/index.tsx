@@ -1,6 +1,6 @@
-import Trigger from '@rc-component/trigger';
-import type { AlignType, BuildInPlacements } from '@rc-component/trigger/lib/interface';
 import classNames from 'classnames';
+import Trigger from 'rc-trigger-modern';
+import type { AlignType, BuildInPlacements } from 'rc-trigger-modern/dist/interface';
 import * as React from 'react';
 import PickerContext from '../PickerInput/context';
 

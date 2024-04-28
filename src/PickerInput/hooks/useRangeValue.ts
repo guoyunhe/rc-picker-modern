@@ -1,4 +1,4 @@
-import { useEvent, useMergedState } from 'rc-util';
+import { useEvent, useMergedState } from 'rc-util-modern';
 import * as React from 'react';
 import type { GenerateConfig } from '../../generate';
 import useSyncState from '../../hooks/useSyncState';

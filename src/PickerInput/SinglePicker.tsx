@@ -1,8 +1,10 @@
-import { useEvent, useMergedState } from 'rc-util';
-import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
-import omit from 'rc-util/lib/omit';
-import pickAttrs from 'rc-util/lib/pickAttrs';
+import { useEvent, useMergedState } from 'rc-util-modern';
+import useLayoutEffect from 'rc-util-modern/dist/hooks/useLayoutEffect';
+import omit from 'rc-util-modern/dist/omit';
+import pickAttrs from 'rc-util-modern/dist/pickAttrs';
 import * as React from 'react';
+import PickerTrigger from '../PickerTrigger';
+import { pickTriggerProps } from '../PickerTrigger/util';
 import useToggleDates from '../hooks/useToggleDates';
 import type {
   BaseInfo,
@@ -15,9 +17,9 @@ import type {
   SharedTimeProps,
   ValueDate,
 } from '../interface';
-import PickerTrigger from '../PickerTrigger';
-import { pickTriggerProps } from '../PickerTrigger/util';
 import { toArray } from '../utils/miscUtil';
+import Popup from './Popup';
+import SingleSelector from './Selector/SingleSelector';
 import PickerContext from './context';
 import useCellRender from './hooks/useCellRender';
 import useFieldsInvalidate from './hooks/useFieldsInvalidate';
@@ -29,8 +31,6 @@ import useRangeActive from './hooks/useRangeActive';
 import useRangePickerValue from './hooks/useRangePickerValue';
 import useRangeValue, { useInnerValue } from './hooks/useRangeValue';
 import useShowNow from './hooks/useShowNow';
-import Popup from './Popup';
-import SingleSelector from './Selector/SingleSelector';
 
 // TODO: isInvalidateDate with showTime.disabledTime should not provide `range` prop
 

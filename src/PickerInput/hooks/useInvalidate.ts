@@ -1,4 +1,4 @@
-import { useEvent } from 'rc-util';
+import { useEvent } from 'rc-util-modern';
 import type { GenerateConfig } from '../../generate';
 import type {
   PanelMode,

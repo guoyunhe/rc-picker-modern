@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-loop-func */
 import { fireEvent, render } from '@testing-library/react';
-import { resetWarned } from 'rc-util/lib/warning';
-import React from 'react';
+import { resetWarned } from 'rc-util-modern/dist/warning';
 import { DayPicker, getDay, isOpen, openPicker, selectCell } from './util/commonUtil';
 
 const fakeTime = getDay('1990-09-03 00:00:00').valueOf();

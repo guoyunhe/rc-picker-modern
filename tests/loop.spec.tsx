@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import dayjs from 'dayjs';
-import { resetWarned } from 'rc-util/lib/warning';
-import React from 'react';
+import { resetWarned } from 'rc-util-modern/dist/warning';
 import zhCN from '../src/locale/zh_CN';
 import { DayRangePicker, getMoment } from './util/commonUtil';
 

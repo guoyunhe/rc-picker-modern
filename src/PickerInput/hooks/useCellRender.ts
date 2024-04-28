@@ -1,4 +1,4 @@
-import { warning } from 'rc-util';
+import { warning } from 'rc-util-modern';
 import * as React from 'react';
 import type { CellRender, CellRenderInfo, SharedPickerProps } from '../../interface';
 

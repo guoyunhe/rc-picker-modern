@@ -1,4 +1,4 @@
-import { warning } from 'rc-util';
+import { warning } from 'rc-util-modern';
 import * as React from 'react';
 import useLocale from '../../hooks/useLocale';
 import { fillShowTimeConfig, getTimeProps } from '../../hooks/useTimeConfig';

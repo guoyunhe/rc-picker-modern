@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import Overflow from 'rc-overflow';
+import Overflow from 'rc-overflow-modern';
 import * as React from 'react';
 import type { PickerProps } from '../../SinglePicker';
 

@@ -2,15 +2,15 @@
 import { act, fireEvent, render } from '@testing-library/react';
 import dayjs, { type Dayjs } from 'dayjs';
 import 'dayjs/locale/ar';
-import { spyElementPrototype } from 'rc-util/lib/test/domHook';
-import { resetWarned } from 'rc-util/lib/warning';
+import { spyElementPrototype } from 'rc-util-modern/dist/test/domHook';
+import { resetWarned } from 'rc-util-modern/dist/warning';
 import React from 'react';
 import type { RangePickerProps } from '../src';
 import zh_CN from '../src/locale/zh_CN';
 import {
-  closePicker,
   DayPicker,
   DayRangePicker,
+  closePicker,
   findCell,
   getDay,
   isOpen,
@@ -20,7 +20,7 @@ import {
   waitFakeTimer,
 } from './util/commonUtil';
 
-jest.mock('rc-util/lib/Dom/isVisible', () => {
+jest.mock('rc-util-modern/dist/Dom/isVisible', () => {
   return () => true;
 });
 

@@ -1,9 +1,12 @@
-import { useEvent, useMergedState } from 'rc-util';
-import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
-import omit from 'rc-util/lib/omit';
-import pickAttrs from 'rc-util/lib/pickAttrs';
-import warning from 'rc-util/lib/warning';
+import { useEvent, useMergedState } from 'rc-util-modern';
+import useLayoutEffect from 'rc-util-modern/dist/hooks/useLayoutEffect';
+import omit from 'rc-util-modern/dist/omit';
+import pickAttrs from 'rc-util-modern/dist/pickAttrs';
+import warning from 'rc-util-modern/dist/warning';
 import * as React from 'react';
+import type { PickerPanelProps } from '../PickerPanel';
+import PickerTrigger from '../PickerTrigger';
+import { pickTriggerProps } from '../PickerTrigger/util';
 import type {
   BaseInfo,
   InternalMode,
@@ -17,10 +20,9 @@ import type {
   SharedPickerProps,
   ValueDate,
 } from '../interface';
-import type { PickerPanelProps } from '../PickerPanel';
-import PickerTrigger from '../PickerTrigger';
-import { pickTriggerProps } from '../PickerTrigger/util';
 import { fillIndex, getFromDate, toArray } from '../utils/miscUtil';
+import Popup, { PopupShowTimeConfig } from './Popup';
+import RangeSelector, { type SelectorIdType } from './Selector/RangeSelector';
 import PickerContext from './context';
 import useCellRender from './hooks/useCellRender';
 import useFieldsInvalidate from './hooks/useFieldsInvalidate';
@@ -33,8 +35,6 @@ import useRangeDisabledDate from './hooks/useRangeDisabledDate';
 import useRangePickerValue from './hooks/useRangePickerValue';
 import useRangeValue, { useInnerValue } from './hooks/useRangeValue';
 import useShowNow from './hooks/useShowNow';
-import Popup, { PopupShowTimeConfig } from './Popup';
-import RangeSelector, { type SelectorIdType } from './Selector/RangeSelector';
 
 function separateConfig<T>(config: T | [T, T] | null | undefined, defaultConfig: T): [T, T] {
   const singleConfig = config ?? defaultConfig;

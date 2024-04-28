@@ -1,15 +1,15 @@
 import classNames from 'classnames';
-import { useEvent } from 'rc-util';
-import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
-import raf from 'rc-util/lib/raf';
+import { useEvent } from 'rc-util-modern';
+import useLayoutEffect from 'rc-util-modern/dist/hooks/useLayoutEffect';
+import raf from 'rc-util-modern/dist/raf';
 import * as React from 'react';
+import type { PickerRef } from '../../interface';
 import { leftPad } from '../../utils/miscUtil';
 import PickerContext from '../context';
 import useLockEffect from '../hooks/useLockEffect';
 import Icon from './Icon';
 import MaskFormat from './MaskFormat';
 import { getMaskRange } from './util';
-import type { PickerRef } from '../../interface';
 
 // Format logic
 //

@@ -1,11 +1,11 @@
 import { fireEvent, render } from '@testing-library/react';
 import dayjs, { type Dayjs } from 'dayjs';
-import { resetWarned } from 'rc-util/lib/warning';
+import { resetWarned } from 'rc-util-modern/dist/warning';
 import React from 'react';
 import type { PanelMode } from '../src/interface';
 import enUS from '../src/locale/en_US';
 import zhCN from '../src/locale/zh_CN';
-import { clickButton, DayPickerPanel, getDay, isSame, selectCell } from './util/commonUtil';
+import { DayPickerPanel, clickButton, getDay, isSame, selectCell } from './util/commonUtil';
 
 jest.mock('../src/utils/uiUtil', () => {
   const origin = jest.requireActual('../src/utils/uiUtil');
@@ -714,5 +714,4 @@ describe('Picker.Panel', () => {
 
     expect(container.querySelector('.rc-picker-header-view').textContent).toEqual('01:02:03 AM');
   });
-
 });

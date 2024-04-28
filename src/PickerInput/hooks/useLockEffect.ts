@@ -1,5 +1,5 @@
-import { useLayoutUpdateEffect } from 'rc-util/lib/hooks/useLayoutEffect';
-import raf from 'rc-util/lib/raf';
+import { useLayoutUpdateEffect } from 'rc-util-modern/dist/hooks/useLayoutEffect';
+import raf from 'rc-util-modern/dist/raf';
 import * as React from 'react';
 
 /**

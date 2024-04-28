@@ -1,5 +1,5 @@
-import { useMergedState } from 'rc-util';
-import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
+import { useMergedState } from 'rc-util-modern';
+import useLayoutEffect from 'rc-util-modern/dist/hooks/useLayoutEffect';
 import * as React from 'react';
 import type { GenerateConfig } from '../../generate';
 import type { InternalMode, Locale, PanelMode } from '../../interface';

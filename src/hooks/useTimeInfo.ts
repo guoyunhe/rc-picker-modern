@@ -1,8 +1,8 @@
-import { warning } from 'rc-util';
+import { warning } from 'rc-util-modern';
 import * as React from 'react';
+import { findValidateTime } from '../PickerPanel/TimePanel/TimePanelBody/util';
 import type { GenerateConfig } from '../generate';
 import type { DisabledTimes, SharedTimeProps } from '../interface';
-import { findValidateTime } from '../PickerPanel/TimePanel/TimePanelBody/util';
 import { leftPad } from '../utils/miscUtil';
 
 export type Unit<ValueType = number | string> = {

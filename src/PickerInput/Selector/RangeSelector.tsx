@@ -1,13 +1,13 @@
 import classNames from 'classnames';
-import ResizeObserver from 'rc-resize-observer';
-import { useEvent } from 'rc-util';
+import ResizeObserver from 'rc-resize-observer-modern';
+import { useEvent } from 'rc-util-modern';
 import * as React from 'react';
 import type { RangePickerRef, SelectorProps } from '../../interface';
 import PickerContext from '../context';
-import useInputProps from './hooks/useInputProps';
-import useRootProps from './hooks/useRootProps';
 import Icon, { ClearIcon } from './Icon';
 import Input, { type InputRef } from './Input';
+import useInputProps from './hooks/useInputProps';
+import useRootProps from './hooks/useRootProps';
 
 export type SelectorIdType =
   | string

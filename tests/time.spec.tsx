@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
-import { resetWarned } from 'rc-util/lib/warning';
-import React from 'react';
+import { resetWarned } from 'rc-util-modern/dist/warning';
 import { DayPicker, getDay, openPicker, selectCell } from './util/commonUtil';
 
 describe('Picker.Time', () => {

@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
+import useLayoutEffect from 'rc-util-modern/dist/hooks/useLayoutEffect';
 import * as React from 'react';
 import { usePanelContext } from '../../context';
 import useScrollTo from './useScrollTo';

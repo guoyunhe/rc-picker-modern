@@ -1,5 +1,5 @@
-import { useEvent, useMergedState } from 'rc-util';
-import raf from 'rc-util/lib/raf';
+import { useEvent, useMergedState } from 'rc-util-modern';
+import raf from 'rc-util-modern/dist/raf';
 import React from 'react';
 
 /**

@@ -1,4 +1,4 @@
-import type { AlignType, BuildInPlacements } from '@rc-component/trigger';
+import type { AlignType, BuildInPlacements } from 'rc-trigger-modern';
 import type { GenerateConfig } from './generate';
 
 export type NullableDateType<DateType> = DateType | null | undefined;

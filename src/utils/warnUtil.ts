@@ -1,5 +1,5 @@
+import warning from 'rc-util-modern/dist/warning';
 import type { DisabledTimes, PickerMode } from '../interface';
-import warning from 'rc-util/lib/warning';
 
 export interface WarningProps extends DisabledTimes {
   picker?: PickerMode;
